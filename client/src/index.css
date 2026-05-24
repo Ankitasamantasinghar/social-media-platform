@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #7c3aed;
+  color: white;
+  padding: 32px;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 48px;
+  font-size: 14px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.title {
+  font-size: 64px;
+  font-weight: bold;
+  margin: 0 0 16px 0;
+}
+
+.line {
+  width: 64px;
+  height: 4px;
+  background: white;
+  margin-bottom: 32px;
+}
+
+.subtitle {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.quote {
+  font-size: 64px;
+  margin-bottom: 16px;
+  line-height: 1;
+  text-align: right;
+}
+
+.desc {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 32px;
+  text-align: right;
+}
+
+.features-title {
+  font-weight: bold;
+  margin-bottom: 8px;
+  text-align: right;
+}
+
+.features {
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: right;
+}
+
+.loading {
+  min-height: 100vh;
+  background-color: #7c3aed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .quote, .desc, .features-title, .features {
+    text-align: left;
+  }
+}
